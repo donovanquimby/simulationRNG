@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# simulationRNG
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of simulationRNG is to provide a package to generate psuedo-random number and random variates while given the user access to the source code for verification, modification, and improvement. 
+
+
+## Installation
+
+You can install the released version of simulationRNG from [github](https://github.gatech.edu/dquimby3/simulationRNG.git) with:
+
+``` r
+devtools::install_github("simulationRNG")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(simulationRNG)
+
+#uniform(0,1) distriubtion
+u <- unif(n = 1e5, type = "bfs1987")
+hist(u)
+
+#Poisson Distribution
+g <- gammaSim(n=5e2, shape =2, scale = 2)
+hist(g)
+
+# Multivariate Normal Distribution
+cov_matrix = matrix(c(1,0.9,0.9,1), nrow = 2, ncol = 2)
+mn <- multiNormal(n=7e2, cov_matrix = cov_matrix,  mu=c(0,0), seed = 122)
+plot(mn)
+```
+
+
+
+
