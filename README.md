@@ -13,11 +13,15 @@ the source code for verification, modification, and improvement.
 ## Installation
 
 This package was developed using R version 4.1, although no functions
-should have version dependencies. You can install the latest released
-version of simulationRNG from
-[github](https://github.com/donovanquimby/simulationRNG) with:
+should have version dependencies, it does seem to require at least this
+version for installation of the package. You can install the latest
+released version of simulationRNG using Rstudio with the following
+command:
 
 devtools::install\_github(“donovanquimby/simulationRNG”)
+
+The package can also be directly downloaded or cloned from from
+<https://github.com/donovanquimby/simulationRNG>.
 
 ## Example
 
