@@ -12,12 +12,12 @@ the source code for verification, modification, and improvement.
 
 ## Installation
 
-You can install the released version of simulationRNG from
-[github](https://github.gatech.edu/dquimby3/simulationRNG.git) with:
+This package was developed using R version 4.1, although no functions
+should have version dependencies. You can install the latest released
+version of simulationRNG from
+[github](https://github.com/donovanquimby/simulationRNG) with:
 
-``` r
-devtools::install_github("simulationRNG")
-```
+devtools::install\_github(“donovanquimby/simulationRNG”)
 
 ## Example
 
@@ -26,7 +26,7 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(simulationRNG)
 
-#uniform(0,1) distriubtion
+# uniform(0,1) distriubtion
 u <- unif(n = 1e5, type = "bfs1987")
 hist(u)
 ```
@@ -34,7 +34,7 @@ hist(u)
 <img src="man/figures/README-example-1.png" width="100%" />
 
 ``` r
-#Poisson Distribution
+# Gamma Distribution
 g <- gammaSim(n=5e2, shape =2, scale = 2)
 hist(g)
 ```
