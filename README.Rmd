@@ -23,10 +23,10 @@ The goal of simulationRNG is to provide a package to generate psuedo-random numb
 
 ## Installation
 
-You can install the released version of simulationRNG from [github](https://github.gatech.edu/dquimby3/simulationRNG.git) with:
+This package was developed using R version 4.1, although no functions should have version dependencies. You can install the latest released version of simulationRNG from [github](https://github.com/donovanquimby/simulationRNG) with:
 
 ``` r
-devtools::install_github("dquimby3/simulationRNG")
+devtools::install_github("donovanquimby/simulationRNG")
 ```
 
 ## Example
