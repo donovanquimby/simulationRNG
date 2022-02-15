@@ -8,7 +8,7 @@
 
 The goal of simulationRNG is to provide a package to generate
 psuedo-random number and random variates while given the user access to
-the source code for verification, modification, and improvement.
+the source code for verification, modification, and improvement. There is currently functions to generate random variants/numbers from 16 distributions.
 
 ## Installation
 
